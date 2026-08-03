@@ -1,8 +1,5 @@
 
-
-
 # IBISWorld Australian Data 2026
-s
 OD5256 Tea  Coffee Production in Australia Industry Report.xlsx:
 https://my.ibisworld.com/au/en/industry-specialized/od5293/at-a-glance?entityId=5293
 

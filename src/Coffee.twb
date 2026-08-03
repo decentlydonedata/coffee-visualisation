@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='4df595793cf7d18918deddf39a239e6e0954ca03d7a41cb640ec252c631fb800' _.fcp.WorkbookFingerprinting.true...creator-author-id='4df595793cf7d18918deddf39a239e6e0954ca03d7a41cb640ec252c631fb800' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='4df595793cf7d18918deddf39a239e6e0954ca03d7a41cb640ec252c631fb800' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='4df595793cf7d18918deddf39a239e6e0954ca03d7a41cb640ec252c631fb800' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='Coffee' type='regular'>
+      <color>#281c15</color>
+      <color>#78523f</color>
+      <color>#b57e6c</color>
+      <color>#eae0d5</color>
+      <color>#1c4f22</color>
+      <color>#4f785e</color>
+      <color>#a7b1b4</color>
+      <color>#c8cdd0</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='data_italy' inline='true' name='federated.17e5pax1n4xmki185684l1s99j89' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_italy' name='textscan.00pbhyv017lfqh14jpalb0ndwxpp'>
+            <connection class='textscan' directory='C:/Users/chloe/Downloads/S2 2026/FIT3179/coffee-visualisation/coffee-visualisation/data/clean' filename='data_italy.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.00pbhyv017lfqh14jpalb0ndwxpp' name='data_italy.csv' table='[data_italy#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='integer' name='Census Year' ordinal='0' />
+            <column datatype='real' name='Percentage of Total overseas born' ordinal='1' />
+            <column datatype='integer' name='Rank' ordinal='2' />
+            <column datatype='integer' name='Italian born' ordinal='3' />
+            <column datatype='integer' name='Total overseas born' ordinal='4' />
+            <column datatype='integer' name='Total population' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Census Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Census Year]</local-name>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias>Census Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage of Total overseas born</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage of Total overseas born]</local-name>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias>Percentage of Total overseas born</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Italian born</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Italian born]</local-name>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias>Italian born</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total overseas born</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total overseas born]</local-name>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias>Total overseas born</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total population]</local-name>
+            <parent-name>[data_italy.csv]</parent-name>
+            <remote-alias>Total population</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Census Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Italian born]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Percentage of Total overseas born]' role='measure' type='quantitative' />
+      <column caption='data_italy.csv' datatype='table' name='[__tableau_internal_object_id__].[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]' role='measure' type='quantitative' />
+      <column-instance column='[Italian born]' derivation='Sum' name='[sum:Italian born:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Percentage of Total overseas born]' derivation='Sum' name='[sum:Percentage of Total overseas born:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/chloe/AppData/Local/Temp/TableauTemp/#TableauTemp_0yanf4517dlus413uly1h1cc4pej.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/03/2026 03:42:03 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Census Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Census Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Census Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_italy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage of Total overseas born</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage of Total overseas born]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage of Total overseas born</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_italy.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_italy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Italian born</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Italian born]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Italian born</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_italy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total overseas born</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total overseas born]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total overseas born</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_italy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total population</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_italy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='Coffee' type='palette'>
+            <map to='#78523f'>
+              <bucket>&quot;[federated.17e5pax1n4xmki185684l1s99j89].[sum:Italian born:qk]&quot;</bucket>
+            </map>
+            <map to='#b57e6c'>
+              <bucket>&quot;[federated.17e5pax1n4xmki185684l1s99j89].[sum:Percentage of Total overseas born:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='data_italy.csv' id='data_italy.csv_AE6D5B1CE2304783BD0D3F067EE6FDBE'>
+            <properties context=''>
+              <relation connection='textscan.00pbhyv017lfqh14jpalb0ndwxpp' name='data_italy.csv' table='[data_italy#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+                  <column datatype='integer' name='Census Year' ordinal='0' />
+                  <column datatype='real' name='Percentage of Total overseas born' ordinal='1' />
+                  <column datatype='integer' name='Rank' ordinal='2' />
+                  <column datatype='integer' name='Italian born' ordinal='3' />
+                  <column datatype='integer' name='Total overseas born' ordinal='4' />
+                  <column datatype='integer' name='Total population' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='data_est' inline='true' name='federated.07a0xzf08fgi901ei1rxq0drfaax' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_est' name='textscan.0cscn0b0se4y5v18sw11o1b14ale'>
+            <connection class='textscan' directory='C:/Users/chloe/Downloads/S2 2026/FIT3179/coffee-visualisation/coffee-visualisation/data/clean' filename='data_est.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0cscn0b0se4y5v18sw11o1b14ale' name='data_est.csv' table='[data_est#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='Establishments' ordinal='1' />
+            <column datatype='real' name='Percentage of Establishments' ordinal='2' />
+            <column datatype='real' name='Percentage of Population' ordinal='3' />
+            <column datatype='real' name='Establishments Per 10,000' ordinal='4' />
+            <column datatype='string' name='Industry' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Establishments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Establishments]</local-name>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias>Establishments</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage of Establishments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage of Establishments]</local-name>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias>Percentage of Establishments</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage of Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage of Population]</local-name>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias>Percentage of Population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Establishments Per 10,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Establishments Per 10,000]</local-name>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias>Establishments Per 10,000</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[data_est.csv]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='data_est.csv' datatype='table' name='[__tableau_internal_object_id__].[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/chloe/AppData/Local/Temp/TableauTemp/#TableauTemp_16kfg6c1tyttyx18ccny80kvq1nl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/03/2026 03:42:15 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_est.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Establishments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Establishments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Establishments</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_est.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage of Establishments</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage of Establishments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage of Establishments</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_est.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage of Population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage of Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage of Population</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_est.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Establishments Per 10,000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Establishments Per 10,000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Establishments Per 10,000</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_est.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_est.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_est.csv_1B5B7F0B9FA445729533D8DC303B1806]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='data_est.csv' id='data_est.csv_1B5B7F0B9FA445729533D8DC303B1806'>
+            <properties context=''>
+              <relation connection='textscan.0cscn0b0se4y5v18sw11o1b14ale' name='data_est.csv' table='[data_est#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Establishments' ordinal='1' />
+                  <column datatype='real' name='Percentage of Establishments' ordinal='2' />
+                  <column datatype='real' name='Percentage of Population' ordinal='3' />
+                  <column datatype='real' name='Establishments Per 10,000' ordinal='4' />
+                  <column datatype='string' name='Industry' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Italian Migration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Gill Sans MT' fontsize='60'>Italian Migrants Brewed a Coffee Culture</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontsize='20'>After WWII Italian migrants brought over espresso, cappuccinos and lattes to</run>
+            <run>Æ&#10;</run>
+            <run fontsize='20'>historically tea-drinking Australia</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_italy' name='federated.17e5pax1n4xmki185684l1s99j89' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e5pax1n4xmki185684l1s99j89'>
+            <column datatype='integer' name='[Census Year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Italian born]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Percentage of Total overseas born]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total overseas born]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total population]' role='measure' type='quantitative' />
+            <column-instance column='[Census Year]' derivation='None' name='[none:Census Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Italian born]' derivation='Sum' name='[sum:Italian born:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Percentage of Total overseas born]' derivation='Sum' name='[sum:Percentage of Total overseas born:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total overseas born]' derivation='Sum' name='[sum:Total overseas born:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total population]' derivation='Sum' name='[sum:Total population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Italian born:qk]' value='68' />
+            <format attr='width' field='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Percentage of Total overseas born:qk]' value='68' />
+            <encoding attr='space' class='0' field='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Percentage of Total overseas born:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.17e5pax1n4xmki185684l1s99j89].[none:Census Year:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.17e5pax1n4xmki185684l1s99j89].[none:Census Year:qk]' field-type='quantitative' max='2002' min='1900' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#c8cdd0' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='text-orientation' data-class='subtotal' scope='rows' value='-90' />
+            <format attr='text-orientation' data-class='total' scope='rows' value='90' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' data-class='subtotal' value='#c8cdd0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Consolas' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Consolas' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Consolas' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.17e5pax1n4xmki185684l1s99j89].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Italian born:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.17e5pax1n4xmki185684l1s99j89].[:Measure Names]' />
+              <lod column='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Italian born:qk]' />
+              <lod column='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Total overseas born:qk]' />
+              <lod column='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Total population:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17e5pax1n4xmki185684l1s99j89].[sum:Percentage of Total overseas born:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.17e5pax1n4xmki185684l1s99j89].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.17e5pax1n4xmki185684l1s99j89].[sum:Italian born:qk] + [federated.17e5pax1n4xmki185684l1s99j89].[sum:Percentage of Total overseas born:qk])</rows>
+        <cols>[federated.17e5pax1n4xmki185684l1s99j89].[none:Census Year:qk]</cols>
+      </table>
+      <simple-id uuid='{367A6587-50C3-4158-8234-2D5589A45BA8}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Italian Migration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17e5pax1n4xmki185684l1s99j89].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17e5pax1n4xmki185684l1s99j89].[none:Census Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{512838EB-86DD-437B-9CD8-1EC03B4D34FA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Italian Migration' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
