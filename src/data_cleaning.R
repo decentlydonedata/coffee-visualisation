@@ -5,7 +5,7 @@ library(readxl)
 library(here)
 library(readabs)
 
-
+# Italian Migration
 raw_italy <- read_excel(paste0(here(),"/data/raw/home_affairs_italians.xlsx"))
 
 data_italy <- raw_italy %>% group_by(`Census Year`) %>%
@@ -20,13 +20,14 @@ data_italy <- raw_italy %>% group_by(`Census Year`) %>%
 
 write_csv(data_italy, file = paste0(here(),"/data/clean/data_italy.csv"))
 
+# Establishments
 raw_est_cacs <- read_excel(paste0(here(),"/data/raw/H4511B Cafes and Coffee Shops in Australia Industry Report.xlsx"), sheet = "Business Locations Region Data") %>%
   rename(State = "State/Territory")
 raw_est_coff <- read_excel(paste0(here(),"/data/raw/OD5381 Coffee Shops in Australia Industry Report.xlsx"), sheet = "Business Locations Region Data")
 raw_est_cbd <- read_excel(paste0(here(),"/data/raw/OD5477 Coffee Bean Distributors in Australia Industry Report.xlsx"), sheet = "Business Locations Region Data")
 raw_est_tcp <- read_excel(paste0(here(),"/data/raw/OD5293 Tea  Coffee Production in Australia Industry Report.xlsx"), sheet = "Business Locations Region Data")
 raw_pop <- read_excel(paste0(here(),"/data/raw/31010do001_202512.xlsx"), sheet = "Table_3", skip = 5)
-
+ 
 data_pop <- raw_pop %>% rename(State = `...1`, Population = `2025...5`) %>% select(State, Population) %>%
   mutate(State = case_when(
     State == "New South Wales" ~ "NSW",
@@ -74,6 +75,7 @@ raw_rev_caf <- left_join(raw_rev_cacs,raw_rev_coff, join_by(Year)) %>%
          'IVA($ Million)' = as.integer(`IVA($ Million).x`) - as.integer(`IVA($ Million).y`)) %>% 
     select(c(Year,`Revenue($ Million)`,`Wages($ Million)`,`IVA($ Million)`))
 
+# Revenue
 detail_rev <- function(raw_data) {
   data <- raw_data %>%
     mutate(
@@ -87,4 +89,8 @@ data_rev <- bind_rows(detail_rev(raw_rev_caf) %>% mutate("Industry" = "Cafes"),
                       detail_rev(raw_rev_coff) %>% mutate("Industry" = "Coffee Shops"),
                       detail_rev(raw_rev_cbd) %>% mutate("Industry" = "Coffee Bean Distributers"),
                       detail_rev(raw_rev_tcp) %>% mutate("Industry" = "Tea and Coffee Producers")) %>%
-  select(c(Year, Revenue, Wages, `Industry Value Added`))
+  select(c(Year, Revenue, Wages, `Industry Value Added`, Industry))
+write_csv(data_rev, file = paste0(here(),"/data/clean/data_rev.csv"))
+
+raw_pref <- read_excel(paste0(here(),"/data/raw/coffee_preferences.xlsx"))
+
