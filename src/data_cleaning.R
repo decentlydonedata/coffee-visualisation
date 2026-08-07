@@ -94,3 +94,13 @@ write_csv(data_rev, file = paste0(here(),"/data/clean/data_rev.csv"))
 
 raw_pref <- read_excel(paste0(here(),"/data/raw/coffee_preferences.xlsx"))
 
+# Coffee Types
+
+
+
+
+
+
+
+
+

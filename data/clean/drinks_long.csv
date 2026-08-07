@@ -1,0 +1,41 @@
+Drink,Percentage Preferences,Total,Ingredient,Volume mL
+Latte,0.27,300,Espresso,30
+Latte,0.27,300,Milk,150
+Latte,0.27,300,Foam,20
+Latte,0.27,300,Water,0
+Latte,0.27,300,Chocolate,0
+Flat White,0.25,200,Espresso,30
+Flat White,0.25,200,Milk,160
+Flat White,0.25,200,Foam,10
+Flat White,0.25,200,Water,0
+Flat White,0.25,200,Chocolate,0
+Cappuccino,0.2,200,Espresso,30
+Cappuccino,0.2,200,Milk,110
+Cappuccino,0.2,200,Foam,60
+Cappuccino,0.2,200,Water,0
+Cappuccino,0.2,200,Chocolate,0
+Long Black,0.08,200,Espresso,30
+Long Black,0.08,200,Milk,0
+Long Black,0.08,200,Foam,0
+Long Black,0.08,200,Water,170
+Long Black,0.08,200,Chocolate,0
+Espresso,0.06,30,Espresso,30
+Espresso,0.06,30,Milk,0
+Espresso,0.06,30,Foam,0
+Espresso,0.06,30,Water,0
+Espresso,0.06,30,Chocolate,0
+Mocha,0.03,270,Espresso,30
+Mocha,0.03,270,Milk,120
+Mocha,0.03,270,Foam,20
+Mocha,0.03,270,Water,0
+Mocha,0.03,270,Chocolate,30
+Piccolo,0.02,100,Espresso,30
+Piccolo,0.02,100,Milk,60
+Piccolo,0.02,100,Foam,10
+Piccolo,0.02,100,Water,0
+Piccolo,0.02,100,Chocolate,0
+Other Beverages,0.1,0,Espresso,0
+Other Beverages,0.1,0,Milk,0
+Other Beverages,0.1,0,Foam,0
+Other Beverages,0.1,0,Water,0
+Other Beverages,0.1,0,Chocolate,0
