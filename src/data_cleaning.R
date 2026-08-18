@@ -96,11 +96,15 @@ raw_pref <- read_excel(paste0(here(),"/data/raw/coffee_preferences.xlsx"))
 
 # Coffee Types
 
+raw_coffee <- read_excel(paste0(here(),"/data/raw/coffee_preferences.xlsx"))
+pref <- raw_coffee %>% select(Drink, `Percentage Preferences`)
+drinks_long <- raw_coffee %>%
+  pivot_longer(
+    cols = c(`Espresso`, `Milk`, `Foam`, `Water`, Chocolate),
+    names_to = "Ingredient",
+    values_to = "Volume mL"
+  )
 
-
-
-
-
-
+write_csv(drinks_long, file = paste0(here(),"/data/clean/drinks_long.csv"))
 
 
